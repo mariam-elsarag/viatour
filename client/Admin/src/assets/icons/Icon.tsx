@@ -424,3 +424,156 @@ export const InfoIcon = ({
     </svg>
   );
 };
+export const StatIcon = ({
+  width = "24",
+  height = "24",
+  fill = "var(--color-icon)",
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3.5 5.5C3.5 4.39543 4.39543 3.5 5.5 3.5H8.5C9.60457 3.5 10.5 4.39543 10.5 5.5V8.5C10.5 9.60457 9.60457 10.5 8.5 10.5H5.5C4.39543 10.5 3.5 9.60457 3.5 8.5V5.5Z"
+        stroke={fill}
+        stroke-width="1.5"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M13.5 5.5C13.5 4.39543 14.3954 3.5 15.5 3.5H18.5C19.6046 3.5 20.5 4.39543 20.5 5.5V8.5C20.5 9.60457 19.6046 10.5 18.5 10.5H15.5C14.3954 10.5 13.5 9.60457 13.5 8.5V5.5Z"
+        stroke={fill}
+        stroke-width="1.5"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M13.5 15.5C13.5 14.3954 14.3954 13.5 15.5 13.5H18.5C19.6046 13.5 20.5 14.3954 20.5 15.5V18.5C20.5 19.6046 19.6046 20.5 18.5 20.5H15.5C14.3954 20.5 13.5 19.6046 13.5 18.5V15.5Z"
+        stroke={fill}
+        stroke-width="1.5"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M3.5 15.5C3.5 14.3954 4.39543 13.5 5.5 13.5H8.5C9.60457 13.5 10.5 14.3954 10.5 15.5V18.5C10.5 19.6046 9.60457 20.5 8.5 20.5H5.5C4.39543 20.5 3.5 19.6046 3.5 18.5V15.5Z"
+        stroke={fill}
+        stroke-width="1.5"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+export const UsersIcon = ({
+  width = "24",
+  height = "24",
+  fill = "var(--color-icon)",
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M18.8232 4.16638C19.5502 4.89065 20 5.89279 20 7.00001C20 8.10722 19.5502 9.10937 18.8232 9.83363M5.17999 4.16638C4.45307 4.89065 4.00321 5.89279 4.00321 7.00001C4.00321 8.10722 4.45307 9.10937 5.17999 9.83363M21.2361 15C21.7111 15.5308 22 16.2317 22 17V18C22 18.7684 21.7111 19.4693 21.2361 20M2.76001 15C2.28495 15.5308 1.99609 16.2317 1.99609 17V18C1.99609 18.7684 2.28495 19.4693 2.76001 20M16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11C14.2091 11 16 9.20914 16 7ZM5 18V17C5 15.3431 6.34314 14 8 14H16C17.6568 14 19 15.3431 19 17V18C19 19.6569 17.6569 21 16 21H8C6.34314 21 5 19.6569 5 18Z"
+        stroke={fill}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+export const CallIcon = ({
+  width = "24",
+  height = "24",
+  fill = "var(--color-icon)",
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M8.27891 15.7279C11.3723 18.8213 15.4915 19.961 18.5262 18.8454C19.8755 18.3494 19.9474 16.6502 19.0261 15.5466L18.2562 14.6244C17.6236 13.8667 16.477 13.8152 15.779 14.5132C15.2845 15.0077 14.5349 15.1451 13.9177 14.8163C13.0548 14.3566 11.8523 13.6444 11.1073 12.8995C10.3624 12.1545 9.65024 10.952 9.19057 10.0891C8.86177 9.47189 8.99913 8.7223 9.49363 8.2278C10.1916 7.5298 10.1401 6.38326 9.38238 5.75063L8.4602 4.98073C7.35661 4.05939 5.65739 4.13128 5.16138 5.48064C4.04586 8.51531 5.18553 12.6345 8.27891 15.7279Z"
+        stroke={fill}
+        stroke-width="1.5"
+      />
+    </svg>
+  );
+};
+export const DesktopIcon = ({
+  width = "24",
+  height = "24",
+  fill = "var(--color-icon)",
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10 18H6C4.34315 18 3 16.6569 3 15V6C3 4.34315 4.34315 3 6 3H18C19.6569 3 21 4.34315 21 6V15C21 16.6569 19.6569 18 18 18H14M10 18V21M10 18H14M10 21H14M10 21H9M14 21V18M14 21H15"
+        stroke={fill}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+export const ReportIcon = ({
+  width = "24",
+  height = "24",
+  fill = "var(--color-icon)",
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6 20.4913V12.2456M6 12.2456V4C8.16667 3.5 8 6.49998 12.5 4.49999C17 2.5 19 5 19 5V13.2456C19 13.2456 17 10.7456 12.5 12.7456C8 14.7456 8.16667 11.7456 6 12.2456Z"
+        stroke={fill}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+export const UserAddIcon = ({
+  width = "24",
+  height = "24",
+  fill = "var(--color-icon)",
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M17 12V14M17 14V16M17 14H15M17 14H19M12 14H7C5.34315 14 4 15.3431 4 17V18C4 19.6569 5.34315 21 7 21H15C15.8885 21 16.6868 20.6137 17.2361 20M15 7C15 4.79086 13.2091 3 11 3C8.79086 3 7 4.79086 7 7C7 9.20914 8.79086 11 11 11C13.2091 11 15 9.20914 15 7Z"
+        stroke={fill}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};

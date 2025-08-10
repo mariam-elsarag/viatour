@@ -43,7 +43,7 @@ const Button: React.FC<buttonPropsType> = ({
   hasFullWidth = true,
   iconRight,
   iconLeft,
-  loaderDir,
+  loaderDir = "left",
 }) => {
   const radious = {
     xl: "rounded-xl",
@@ -66,16 +66,19 @@ const Button: React.FC<buttonPropsType> = ({
     primary: `${base} border-primary-500 bg-primary-500 text-white hover:bg-primary-600 `,
     secondary: `${base}  bg-white text-primary-500 hover:bg-neutral-100 `,
     outline: `${base} border border-neutral-300 text-neutral-600 hover:bg-neutral-50 `,
-    tertiery: `${base} b text-primary-500  hover:bg-neutral-50 `,
+    tertiery: `${base}  text-primary-500  hover:bg-neutral-50 `,
     error: `${base} bg-error-700 hover:bg-error-600 text-white`,
     error_outline: `${base} border border-error-700 text-error-700 hover:bg-error-50 `,
     error_tertiery: `${base}  text-error-700 hover:bg-error-50 `,
   };
   const spinnerFillColor = {
-    primary: "!fill-white",
-    outline: "!fill-primary-500",
-
+    primary: "!fill-primary-500",
+    secondary: "!fill-white",
+    outline: "!fill-neutral-600",
+    tertiery: "!fill-primary-500",
     error: "!fill-error-500",
+    error_outline: "!fill-error-500",
+    error_tertiery: "!fill-error-500",
   };
   if (to)
     return (
@@ -85,6 +88,7 @@ const Button: React.FC<buttonPropsType> = ({
         {iconRight}
       </Link>
     );
+
   return (
     <button
       disabled={disabled || loading}

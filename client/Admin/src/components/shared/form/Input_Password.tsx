@@ -16,7 +16,7 @@ const Input_Password = ({ error, value, disabled, item, handleChange }) => {
           name={item?.name}
           type={showPassword ? "text" : "password"}
           onChange={handleChange}
-          value={value}
+          value={value || ""}
           disabled={disabled}
           placeholder={item?.placeholder || ""}
           className={`flex-1 ${item?.inputClassName}`}

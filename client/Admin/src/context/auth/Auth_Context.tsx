@@ -59,6 +59,7 @@ const AuthProvider = ({ children }: Props) => {
       avatar: data.avatar,
       role: data.role,
     });
+    navigate("/");
   };
 
   const logout = (nav = "/") => {

@@ -87,6 +87,6 @@
     @apply py-10 sm:py-20;
   }
   .section_gap {
-    @apply flex flex-col w-f gap-20;
+    @apply flex flex-col w-full gap-20;
   }
 }

@@ -14,7 +14,7 @@ import { API } from "../../service/apiUrl";
 import { toast } from "react-toastify";
 
 const Login = () => {
-  const { login } = useAuth();
+  const { login: loginFn } = useAuth();
   const navigate = useNavigate();
   const [remember, setRemember] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -23,7 +23,7 @@ const Login = () => {
   const {
     control,
     setError,
-
+    reset,
     formState: { errors, isValid },
     handleSubmit,
   } = useForm({
@@ -77,10 +77,15 @@ const Login = () => {
     try {
       setLoading(true);
       const res = await axiosInstance.post(API.auth.login, data);
-
+      console.log(res);
       if (res.status === 200) {
-        login(data, remember ? true : false);
-        navigate("/");
+        if (res.data.role === "admin") {
+          reset();
+
+          loginFn(res.data, remember ? true : false);
+        } else {
+          toast.error("You are not authorized to login");
+        }
       }
     } catch (err) {
       handleError(err, setError, navigate, data?.email);
@@ -93,17 +98,7 @@ const Login = () => {
       onSubmit={handleSubmit(onSubmit)}
       className="flex-1 flex flex-col gap-10 "
     >
-      <Unauth_Header
-        title="Sign in"
-        description={
-          <p>
-            <span>Don’t have an account? </span>
-            <Link className="text-primary-500 underline" to="/account/register">
-              Create now
-            </Link>
-          </p>
-        }
-      />
+      <Unauth_Header title="Sign in" />
       <fieldset className="flex flex-col gap-10">
         <div className="flex flex-col gap-6">
           <Form_Builder

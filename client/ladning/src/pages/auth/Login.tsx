@@ -79,8 +79,12 @@ const Login = () => {
       const res = await axiosInstance.post(API.auth.login, data);
 
       if (res.status === 200) {
-        login(data, remember ? true : false);
-        navigate("/");
+        if (res.data.role === "user") {
+          login(res.data, remember ? true : false);
+          navigate("/");
+        } else {
+          toast.error("You are not authorized to login");
+        }
       }
     } catch (err) {
       handleError(err, setError, navigate, data?.email);

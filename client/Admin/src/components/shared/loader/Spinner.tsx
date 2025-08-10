@@ -7,7 +7,7 @@ const Spinner: React.FC<SpinnerProps> = ({ className }) => {
   return (
     <svg
       aria-hidden="true"
-      className={`${className} h-5 w-5 animate-spin fill-primary-500  text-primary-100 `}
+      className={`${className} h-4 w-4 animate-spin fill-primary-500  text-neutral-200 `}
       viewBox="0 0 100 101"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
