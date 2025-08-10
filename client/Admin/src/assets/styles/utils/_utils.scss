@@ -1,0 +1,28 @@
+.container {
+  max-width: 1536px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @media (min-width: 1024px) and (max-width: 1535px) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  @media (min-width: 1536px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+.main_shadow {
+  box-shadow: 0 0 8px #000c061a;
+}
+.support_bg {
+  background: url("../../images/home/support/support.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

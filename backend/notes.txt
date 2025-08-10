@@ -1,0 +1,41 @@
+=============
+=> Done
+============
+1- auth 
+ 1.1- login
+ 1.2- Registeration (agent, user)
+ 1.3 otp (send , verify)
+
+2- user
+  2.1- profile for all (delete and update)=> need to work on avatar
+  2.2 user list for admin
+=============
+=> To do
+=============
+
+1- application flow
+1.1- all application with search and filter ✅
+1.2- approve or accept application ✅
+
+
+2-testimonials
+1- randome 6 for landing ✅
+2- curd for admin ✅
+
+
+3- support 
+1- create db ✅
+2- create for landing
+3- curd for admin 
+4- reply with email for admin
+
+4- faq 
+1- create db ✅
+2- create for landing ✅
+3- curd for admin ✅
+4- reply with email for admin ✅
+
+
+
+2- user flow 
+1.1 agent Registeration to add attachment

@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@mixin typography($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+}
+.display_lg {
+  @include typography(64px, 96px);
+}
+.display_md {
+  @include typography(48px, 72px);
+}
+.display_sm {
+  @include typography(28px, 36px);
+  @media (min-width: 744px) {
+    @include typography(32px, 40px);
+  }
+  @media (min-width: 1024px) {
+    @include typography(40px, 60px);
+  }
+}
+
+.headline_lg {
+  @include typography(20px, 32px);
+  @media (min-width: 744px) {
+    @include typography(28px, 36px);
+  }
+  @media (min-width: 1024px) {
+    @include typography(32px, 40px);
+  }
+}
+.headline_md {
+  @include typography(24px, 36px);
+  @media (min-width: 1024px) {
+    @include typography(28px, 36px);
+  }
+}
+.headline_sm {
+  @include typography(16px, 24px);
+  @media (min-width: 744px) {
+    @include typography(20px, 32px);
+  }
+  @media (min-width: 1024px) {
+    @include typography(24px, 36px);
+  }
+}
+
+.title_xl {
+  @include typography(14px, 20px);
+  @media (min-width: 1024px) {
+    @include typography(16px, 24px);
+  }
+  @media (min-width: 1024px) {
+    @include typography(20px, 32px);
+  }
+}
+.title_lg {
+  @include typography(16px, 20px);
+
+  @media (min-width: 744px) {
+    @include typography(18px, 24px);
+  }
+}
+.title_md {
+  @include typography(14px, 20px);
+}
+.title_sm {
+  @include typography(12px, 20px);
+}
+
+.body_2xl {
+  @include typography(22px, 28px);
+}
+.body_xl {
+  @include typography(20px, 28px);
+}
+.body_lg {
+  @include typography(14px, 20px);
+  @media (min-width: 744px) {
+    @include typography(16px, 24px);
+  }
+}
+.body_md {
+  @include typography(14px, 20px);
+}
+.body_sm {
+  @include typography(12px, 16px);
+}
+
+.label_xl {
+  @include typography(12px, 16px);
+  @media (min-width: 744px) {
+    @include typography(14px, 20px);
+  }
+  @media (min-width: 1024px) {
+    @include typography(16px, 24px);
+  }
+}
+.label_lg {
+  @include typography(14px, 20px);
+}
+.label_md {
+  @include typography(12px, 16px);
+}
+.label_sm {
+  @include typography(10px, 12px);
+}
+
+body,
+.p-component,
+.p-accordion {
+  font-family: "Inter", sans-serif;
+}

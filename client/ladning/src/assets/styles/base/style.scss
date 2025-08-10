@@ -1,0 +1,12 @@
+@use "../utils/font";
+@use "../utils/utils";
+
+// component
+@use "../component/auth";
+@use "../component/input";
+
+// lib
+@use "../lib/prime_checkbox";
+@use "../lib/prime_otp";
+@use "../lib/toast";
+@use "../lib/prime_accordion";
